@@ -1499,7 +1499,7 @@
 	)
 	(text "via to inner layer"
 		(exclude_from_sim no)
-		(at 56.388 75.946 0)
+		(at 53.086 76.708 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2624,7 +2624,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 71.12) (xy 72.39 71.12)
+			(xy 59.69 71.12) (xy 67.31 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2682,28 +2682,6 @@
 		)
 		(uuid "fd4e206d-3308-464c-9f30-ca84a2406d89")
 	)
-	(global_label "LED_CTRL1"
-		(shape output)
-		(at 55.88 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3b0410ab-fb9c-43c7-88c7-a6befe47a1bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.0251 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PP2"
 		(shape input)
 		(at 26.67 34.29 180)
@@ -2739,6 +2717,28 @@
 		(uuid "7b38936c-a11e-463f-a604-926ed224eaaa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 143.5923 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_CTRL1"
+		(shape input)
+		(at 67.31 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d8f4cb2-3fac-4d1f-803a-d3de0abb0b41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.4551 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3408,6 +3408,72 @@
 			(project "Preh-13250-0500-L"
 				(path "/9b2d5e25-09e0-4218-be17-c115a885c472/a96c1825-69cc-4d78-b19f-6fdfeb00d9a9"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 26.67 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "348bdc8e-ffd2-4e40-b9f1-5e61aab664d3")
+		(property "Reference" "#PWR026"
+			(at 26.67 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07df7c0c-0a47-4ffe-9398-8b6a82349e4f")
+		)
+		(instances
+			(project ""
+				(path "/9b2d5e25-09e0-4218-be17-c115a885c472/a96c1825-69cc-4d78-b19f-6fdfeb00d9a9"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -4748,7 +4814,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b1e313b2-d2bc-489d-95b9-f9f134919c5c")
-		(property "Reference" "Q6"
+		(property "Reference" "Q10"
 			(at 116.84 71.1199 0)
 			(effects
 				(font
@@ -4805,7 +4871,7 @@
 		(instances
 			(project "Preh-13250-0500-L"
 				(path "/9b2d5e25-09e0-4218-be17-c115a885c472/a96c1825-69cc-4d78-b19f-6fdfeb00d9a9"
-					(reference "Q6")
+					(reference "Q10")
 					(unit 1)
 				)
 			)
